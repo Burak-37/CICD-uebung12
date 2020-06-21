@@ -9,14 +9,14 @@ commands:
 - mvn -Dmaven.test.skip=true assembly:assembly
 - name: unittests
  image: maven:3-jdk-11
- command:
+ commands:
  -mvn test
  - name: pmd
  image: rawdee/pmd
  commands:
  - pmd -d  src/main/java -f text -R pmd_ruleset.xml -language java
 -name: publish
-image: publish/docker
+image: plugins/docker
 settings:
   repo: burak-37/calculator
   username: 
