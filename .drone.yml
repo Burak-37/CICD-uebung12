@@ -18,7 +18,7 @@ commands:
 -name: publish
 image: plugins/docker
 settings:
-  repo: burak-37/calculator
+  repo: burak37/CICD-uebung12
   username: 
     from_secrets: dockerhub_user
     password:
